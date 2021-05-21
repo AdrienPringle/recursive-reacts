@@ -1,0 +1,65 @@
+.message-block {
+	margin-top: 1rem;
+}
+
+.row {
+	display: flex;
+	position: relative;
+}
+.row:hover {
+	background-color: var(--hover-color);
+}
+.row:hover .helper {
+	opacity: 1;
+}
+.row:hover .time {
+	opacity: 1;
+}
+.first {
+	width: 4rem;
+	text-align: center;
+}
+
+.icon {
+	padding-top: 0.2rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	justify-self: center;
+}
+
+.name {
+	color: white;
+	margin-right: 0.3rem;
+}
+.name:hover {
+	text-decoration: underline;
+}
+
+.date {
+	font-size: 0.7rem;
+	color: var(--light-color);
+}
+
+.time {
+	font-size: 0.7rem;
+	color: var(--light-color);
+	justify-self: center;
+	margin-top: 0.4rem;
+	opacity: 0;
+	align-self: start;
+	padding-top: 0;
+}
+
+.helper {
+	position: absolute;
+	top: -1rem;
+	right: 3rem;
+	border-radius: 0.3rem;
+	pointer-events: none;
+
+	padding: 0.2rem;
+	background-color: var(--background-color);
+	border: 0.1rem solid var(--popup-color);
+
+	opacity: 0;
+}

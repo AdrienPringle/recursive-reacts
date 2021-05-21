@@ -1,0 +1,27 @@
+.header {
+	margin: 0.5rem;
+	margin-top: 100%;
+}
+
+.circle {
+	background-color: var(--item-hover-color);
+	font-size: 3rem;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 4rem;
+	margin: 0.5rem;
+	color: white;
+}
+.welcome {
+	font-weight: 800;
+	color: white;
+	font-size: 2rem;
+}
+.start {
+	color: var(--midrange-text-color);
+}
+hr {
+	border: 0.01rem solid var(--item-hover-color);
+}
