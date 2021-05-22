@@ -4,7 +4,7 @@ body {
 	color: var(--text-color);
 }
 :root {
-	font-size: min(3vh, 3vw);
+	font-size: min(3vh, 4.75vw);
 	--text-color: #dcddde;
 	--light-color: #71757c;
 	--name-color: #ffffff;
