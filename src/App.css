@@ -34,3 +34,42 @@
 .text-input input:focus {
 	outline: none;
 }
+
+.logo {
+	text-decoration: none;
+	font-size: 0.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	color: var(--light-color);
+
+	position: absolute;
+	right: -1.5rem;
+	top: 0;
+	bottom: 0;
+}
+
+.brand {
+	margin-top: 0.2em;
+	font-weight: bold;
+	padding: 0.4em;
+	padding-top: 0.3em;
+	border-radius: 0.4em;
+	background-image: linear-gradient(
+		185deg,
+		var(--item-hover-color) 20%,
+		var(--item-hover-color) 130%
+	);
+}
+.logo:hover {
+	color: white;
+}
+.logo:hover .brand {
+	text-shadow: 0 0 0.2em #000000a0;
+	background-image: linear-gradient(
+		185deg,
+		rgba(174, 68, 191, 1) 20%,
+		rgba(217, 156, 106, 1) 130%
+	);
+}

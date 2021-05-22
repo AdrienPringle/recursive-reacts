@@ -19,10 +19,12 @@ function App() {
 		if (chatRef.current.scrollTop) {
 			chatRef.current.scrollTop = chatRef.current.scrollHeight;
 		} else {
-			chatRef.current.scrollTo({
-				top: chatRef.current.scrollHeight + 10,
-				behavior: "smooth",
-			});
+			setTimeout(() => {
+				chatRef.current.scrollTo({
+					top: chatRef.current.scrollHeight + 10,
+					behavior: "smooth",
+				});
+			}, 500);
 		}
 	}, [input]);
 
@@ -83,6 +85,9 @@ function App() {
 					onChange={(e) => setInput(e.target.value)}
 					placeholder={"message # " + channel}
 				/>
+				<a href="https://apringle.dev" className="logo">
+					<div>Made by</div> <div className="brand">Adrien Pringle</div>
+				</a>
 			</form>
 		</div>
 	);
